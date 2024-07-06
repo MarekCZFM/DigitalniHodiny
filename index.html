@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock" id="hours">
+            <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle cx="50" cy="50" r="45" id="hours-progress"></circle>
+            </svg>
+            <div class="time" id="hours-text">00</div>
+            <div class="label">HOURS</div>
+        </div>
+        <div class="clock" id="minutes">
+            <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle cx="50" cy="50" r="45" id="minutes-progress"></circle>
+            </svg>
+            <div class="time" id="minutes-text">00</div>
+            <div class="label">MINUTES</div>
+        </div>
+        <div class="clock" id="seconds">
+            <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle cx="50" cy="50" r="45" id="seconds-progress"></circle>
+            </svg>
+            <div class="time" id="seconds-text">00</div>
+            <div class="label">SECONDS</div>
+        </div>
+        <div class="period" id="period-text">AM</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
